@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "homepage": "https://your-username.github.io/react-portfolio",
+    "homepage": "https://leo961011.github.io/portfolio",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -18,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   
-  "homepage": "https://your-username.github.io/react-portfolio",
+  "homepage": "https://leo961011.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
