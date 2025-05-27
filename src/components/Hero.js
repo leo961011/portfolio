@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // Import images
-import card1 from '../assets/1.jpg';
-import card2 from '../assets/2.jpg';
-import card3 from '../assets/3.jpg';
-import card4 from '../assets/4.jpg';
+import card1 from "../assets/1.jpg";
+import card2 from "../assets/2.jpg";
+import card3 from "../assets/3.jpg";
+import card4 from "../assets/4.jpg";
 
 const cardImages = [card1, card2, card3, card4];
 
@@ -123,7 +123,7 @@ const Hero = () => {
               variants={textVariants}
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
             >
-              Hi, I'm <span className="text-indigo-400">Hiroshi Saito</span>
+              Hi, I'm <span className="text-indigo-400">Leo Wright</span>
               <br />
               <span className="bg-gradient-to-r from-indigo-400 to-indigo-600 bg-clip-text text-transparent">
                 Creative Developer
@@ -209,15 +209,20 @@ const Hero = () => {
               pagination={{ clickable: true }}
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               modules={[EffectCoverflow, Pagination, Autoplay]}
-              className="mySwiper w-72 h-72 md:w-96 md:h-96"
+              className="mySwiper w-96 h-96 md:w-96 md:h-96"
+              style={{padding: "96px", borderRadius: "15px"}}
             >
               {cardImages.map((img, idx) => (
                 <SwiperSlide key={img}>
                   <div className="relative flex items-center justify-center w-full h-full">
                     {/* Glowing border effect */}
-                    <div className="absolute inset-0 rounded-2xl pointer-events-none z-10" style={{
-                      boxShadow: '0 0 40px 10px rgba(99,102,241,0.25), 0 0 0 6px rgba(99,102,241,0.4)'
-                    }} />
+                    <div
+                      className="absolute inset-0 rounded-2xl pointer-events-none z-10"
+                      style={{
+                        boxShadow:
+                          "0 0 40px 10px rgba(99,102,241,0.25), 0 0 0 6px rgba(99,102,241,0.4)",
+                      }}
+                    />
                     {/* Soft glow behind */}
                     <div className="absolute inset-0 rounded-2xl bg-indigo-400 opacity-20 blur-2xl z-0" />
                     <img
