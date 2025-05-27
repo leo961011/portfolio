@@ -98,7 +98,7 @@ const Footer = () => {
         >
           <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4">
             <p className="text-xs sm:text-sm text-indigo-100/40 text-center sm:text-left">
-              © {currentYear} Hiroshi Saito. All rights reserved.
+              © {currentYear} Leo Wright. All rights reserved.
             </p>
             <div className="flex gap-3 sm:gap-4">
               <motion.a

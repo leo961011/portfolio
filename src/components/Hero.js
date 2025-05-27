@@ -210,7 +210,7 @@ const Hero = () => {
               autoplay={{ delay: 4000, disableOnInteraction: false }}
               modules={[EffectCoverflow, Pagination, Autoplay]}
               className="mySwiper w-96 h-96 md:w-96 md:h-96"
-              style={{padding: "96px", borderRadius: "15px"}}
+              style={{padding: "16px", borderRadius: "15px"}}
             >
               {cardImages.map((img, idx) => (
                 <SwiperSlide key={img}>
