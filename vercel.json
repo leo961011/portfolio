@@ -3,20 +3,21 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/old-path",
-      "destination": "/new-path"
-    }
-  ],
-  "redirects": [
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
     {
-      "source": "/blog",
-      "destination": "https://medium.com/your-blog",
-      "permanent": true
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
     }
   ]
 }
